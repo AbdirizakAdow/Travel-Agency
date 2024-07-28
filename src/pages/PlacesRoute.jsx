@@ -1,11 +1,14 @@
-import React from 'react'
+import React from "react";
+import Places from "../components/Places/Places";
 
 const PlacesRoute = () => {
   return (
-    <div>
-      
-    </div>
-  )
-}
+    <>
+      <div className="pt-14">
+        <Places />
+      </div>
+    </>
+  );
+};
 
-export default PlacesRoute
+export default PlacesRoute;

@@ -1,17 +1,32 @@
-import React from 'react'
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Layout from './pages/Layout';
-import Home from './pages/Home';
-import Blogs from './pages/Blogs';
-import BlogsDetails from './pages/BlogsDetails';
-import PlacesRoute from './pages/PlacesRoute';
-import About from './pages/About';
-import NoPage from './pages/NoPage';
+import React from "react";
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from "./pages/Layout";
+import Home from "./pages/Home";
+import Blogs from "./pages/Blogs";
+import NoPage from "./pages/NoPage";
+import PlacesRoute from "./pages/PlacesRoute";
+import About from "./pages/About";
+import BlogsDetails from "./pages/BlogsDetails";
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import 'aos/dist/aos.css'; // Ensure this path is correct
+import AOS from 'aos';
+
 
 const App = () => {
+  React.useEffect(() => {
+    AOS.init({
+      offset: 100,
+      duration: 900,
+      easing: "ease-in-sine",
+      delay: 100,
+    });
+    AOS.refresh();
+  }, []);
   return (
-  <>
-  <BrowserRouter>
+    <>
+      <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
@@ -23,9 +38,8 @@ const App = () => {
           </Route>
         </Routes>
       </BrowserRouter>
-  
-  </>
+    </>
   );
 };
 
-export default App
+export default App;
