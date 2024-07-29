@@ -13,7 +13,6 @@ import 'slick-carousel/slick/slick-theme.css';
 import 'aos/dist/aos.css'; // Ensure this path is correct
 import AOS from 'aos';
 
-
 const App = () => {
   React.useEffect(() => {
     AOS.init({
