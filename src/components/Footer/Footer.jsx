@@ -60,7 +60,10 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-3 mt-3">
                 <FaMobileAlt />
-                <p>+252612847462</p>
+                <p>+252612847462</p> 
+              </div>
+              <div className="flex items-center gap-3 mt-3">
+                <p>abdirzakadow@gmail.com</p>
               </div>
               {/* social handles */}
               <div>
@@ -142,7 +145,7 @@ const Footer = () => {
           </div>
           <div>
             <div className="text-center py-5 border-t-2 border-gray-300/50 bg-primary text-white">
-              @copyright 2024 All rights reserved || Made with ❤️ by Dilshad
+              @copyright 2024 All rights reserved || Made with  by Abdirizak Adow
             </div>
           </div>
         </div>

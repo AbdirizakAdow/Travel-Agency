@@ -5,6 +5,7 @@ import { FaCaretDown } from "react-icons/fa";
 import ResponsiveMenu from "./ResponsiveMenu.jsx";
 import { HiMenuAlt3, HiMenuAlt1 } from "react-icons/hi";
 
+
 export const NavbarLinks = [
   {
     name: "Home",
